@@ -65,7 +65,7 @@ int main(void) {
 	end_time = MPI_Wtime();
 
 	/* Write julia_set_image to the ouput file */
-	for (row = 0; row < NUMBER_OF_ROWS; row++){
+	for (row = 0; row < NUMBER_OF_ROWS; row++) {
 		fwrite(julia_set_image[row], sizeof(char), NUMBER_OF_COLUMNS, output_file);
 	}
 
@@ -74,7 +74,7 @@ int main(void) {
 	total_time = end_time - start_time;
 
 	fprintf(stderr, "Time spent by Julia set of %dx%d=%.16g milliseconds\n",
-			NUMBER_OF_ROWS, NUMBER_OF_COLUMNS, total_time);
+	        NUMBER_OF_ROWS, NUMBER_OF_COLUMNS, total_time);
 
 	return EXIT_SUCCESS;
 }
