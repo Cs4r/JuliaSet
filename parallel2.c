@@ -97,7 +97,7 @@ int main(void) {
 
 		FILE *output_file;
 
-		output_file = fopen("output.raw", "wb");
+		output_file = fopen("parallel2_output.raw", "wb");
 
 		if (!output_file) {
 			printf("Cannot open output file\n");
