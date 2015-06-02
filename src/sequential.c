@@ -30,7 +30,7 @@ int main(void) {
 	FILE *output_file;
 	double start_time, end_time, total_time;
 
-	output_file = fopen("output.raw", "wb");
+	output_file = fopen("./output/sequential_output.raw", "wb");
 
 	if (!output_file) {
 		printf("Cannot open output file\n");
