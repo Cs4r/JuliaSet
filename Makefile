@@ -6,8 +6,6 @@ OUTPUTDIR = ./output
 all: sequential parallel1 parallel2 parallel3
 
 sequential:
-	mkdir -p $(BINDIR)
-	mkdir -p  $(OUTPUTDIR) 
 	$(COMPILER) $(SRCDIR)sequential.c -o $(BINDIR)sequential
 
 parallel1:
